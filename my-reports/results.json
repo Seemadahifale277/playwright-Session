@@ -1,0 +1,215 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\DELL\\Desktop\\Playwright-Automation-Session-Test-Cases\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/Day6_Ui_Validations.spec.ts",
+      "--headed"
+    ],
+    "configFile": "C:\\Users\\DELL\\Desktop\\Playwright-Automation-Session-Test-Cases\\playwright.config.ts",
+    "rootDir": "C:/Users/DELL/Desktop/Playwright-Automation-Session-Test-Cases/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/DELL/Desktop/Playwright-Automation-Session-Test-Cases/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/DELL/Desktop/Playwright-Automation-Session-Test-Cases/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "my-reports/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "Day6_Ui_Validations.spec.ts",
+      "file": "Day6_Ui_Validations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Test 1 to validate URL",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2375,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-20T03:20:31.837Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5cd86473d57b93d78a7-707118c65c8723f9b2a7",
+          "file": "Day6_Ui_Validations.spec.ts",
+          "line": 15,
+          "column": 5
+        },
+        {
+          "title": "Input box validations test case2",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7260,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('Full name')\nExpected: \u001b[32m\"1\u001b[7m6\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"1\u001b[7m5\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByLabel('Full name') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Full name')\u001b[22m\n\u001b[2m    13 × locator resolved to <input id=\"name\" type=\"text\" maxlength=\"15\" value=\"John Doe\" placeholder=\"John Doe\"/>\u001b[22m\n\u001b[2m       - unexpected value \"15\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('Full name')\nExpected: \u001b[32m\"1\u001b[7m6\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"1\u001b[7m5\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByLabel('Full name') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Full name')\u001b[22m\n\u001b[2m    13 × locator resolved to <input id=\"name\" type=\"text\" maxlength=\"15\" value=\"John Doe\" placeholder=\"John Doe\"/>\u001b[22m\n\u001b[2m       - unexpected value \"15\"\u001b[22m\n\n    at C:\\Users\\DELL\\Desktop\\Playwright-Automation-Session-Test-Cases\\tests\\Day6_Ui_Validations.spec.ts:39:20",
+                    "location": {
+                      "file": "C:\\Users\\DELL\\Desktop\\Playwright-Automation-Session-Test-Cases\\tests\\Day6_Ui_Validations.spec.ts",
+                      "column": 20,
+                      "line": 39
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m \u001b[90m// validate maxlength \u001b[39m\n \u001b[90m 38 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m \u001b[36mawait\u001b[39m expect(name)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'maxlength'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'16'\u001b[39m) \u001b[90m// hard  // soft \u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m\n \u001b[90m 41 |\u001b[39m \u001b[36mawait\u001b[39m name\u001b[33m.\u001b[39mfill(\u001b[32m\"kelvin duo\"\u001b[39m)\n \u001b[90m 42 |\u001b[39m \u001b[36mawait\u001b[39m expect(name)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m\"kelvin duo\"\u001b[39m)\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\DELL\\Desktop\\Playwright-Automation-Session-Test-Cases\\tests\\Day6_Ui_Validations.spec.ts",
+                        "column": 20,
+                        "line": 39
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByLabel('Full name')\nExpected: \u001b[32m\"1\u001b[7m6\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"1\u001b[7m5\u001b[27m\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" getByLabel('Full name') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByLabel('Full name')\u001b[22m\n\u001b[2m    13 × locator resolved to <input id=\"name\" type=\"text\" maxlength=\"15\" value=\"John Doe\" placeholder=\"John Doe\"/>\u001b[22m\n\u001b[2m       - unexpected value \"15\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 37 |\u001b[39m \u001b[90m// validate maxlength \u001b[39m\n \u001b[90m 38 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m \u001b[36mawait\u001b[39m expect(name)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m'maxlength'\u001b[39m\u001b[33m,\u001b[39m\u001b[32m'16'\u001b[39m) \u001b[90m// hard  // soft \u001b[39m\n \u001b[90m    |\u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m\n \u001b[90m 41 |\u001b[39m \u001b[36mawait\u001b[39m name\u001b[33m.\u001b[39mfill(\u001b[32m\"kelvin duo\"\u001b[39m)\n \u001b[90m 42 |\u001b[39m \u001b[36mawait\u001b[39m expect(name)\u001b[33m.\u001b[39mtoHaveValue(\u001b[32m\"kelvin duo\"\u001b[39m)\u001b[0m\n\u001b[2m    at C:\\Users\\DELL\\Desktop\\Playwright-Automation-Session-Test-Cases\\tests\\Day6_Ui_Validations.spec.ts:39:20\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-20T03:20:34.955Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\DELL\\Desktop\\Playwright-Automation-Session-Test-Cases\\test-results\\Day6_Ui_Validations-Input-box-validations-test-case2-chromium\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\DELL\\Desktop\\Playwright-Automation-Session-Test-Cases\\tests\\Day6_Ui_Validations.spec.ts",
+                    "column": 20,
+                    "line": 39
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d5cd86473d57b93d78a7-740a66fc079546e81057",
+          "file": "Day6_Ui_Validations.spec.ts",
+          "line": 28,
+          "column": 5
+        },
+        {
+          "title": "test case 3 to validate radio button",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2432,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-20T03:20:44.996Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d5cd86473d57b93d78a7-656c8466962be7828c87",
+          "file": "Day6_Ui_Validations.spec.ts",
+          "line": 50,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-20T03:20:30.566Z",
+    "duration": 18428.795,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
